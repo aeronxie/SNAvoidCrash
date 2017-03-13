@@ -20,11 +20,25 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	[[CrashTest new] crashTest];
 	
+	[self test3];
+}
+
+- (void)test1 {
+	// 找不到方法实现
+	[[CrashTest new] crashTest];
+}
+
+- (void)test2 {
+	// index 越界
 	NSArray *arr = @[@"1",@"2"];
 	[arr objectAtIndex:2];
-	
+}
+
+- (void)test3 {
+	// 插入为nil
+	NSMutableArray *arr = @[@"1",@"2"].mutableCopy;
+	[arr addObject:nil];
 }
 
 

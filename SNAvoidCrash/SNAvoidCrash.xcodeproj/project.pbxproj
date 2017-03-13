@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D24458A31E765E3A00F8FA41 /* SNVoidCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D24458A21E765E3A00F8FA41 /* SNVoidCrashManager.m */; };
 		D24458A61E7674A600F8FA41 /* NSDictionary+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D24458A51E7674A600F8FA41 /* NSDictionary+AvoidCrash.m */; };
+		D24458E11E76B3FC00F8FA41 /* NSMutableArray+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D24458E01E76B3FC00F8FA41 /* NSMutableArray+AvoidCrash.m */; };
+		D24458E41E76B7D000F8FA41 /* NSMutableDictionary+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D24458E31E76B7D000F8FA41 /* NSMutableDictionary+AvoidCrash.m */; };
 		D2FEF4531E6E892900584AF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4521E6E892900584AF9 /* main.m */; };
 		D2FEF4561E6E892900584AF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4551E6E892900584AF9 /* AppDelegate.m */; };
 		D2FEF4591E6E892900584AF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4581E6E892900584AF9 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 		D24458A21E765E3A00F8FA41 /* SNVoidCrashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNVoidCrashManager.m; sourceTree = "<group>"; };
 		D24458A41E7674A600F8FA41 /* NSDictionary+AvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AvoidCrash.h"; sourceTree = "<group>"; };
 		D24458A51E7674A600F8FA41 /* NSDictionary+AvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AvoidCrash.m"; sourceTree = "<group>"; };
+		D24458DF1E76B3FC00F8FA41 /* NSMutableArray+AvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+AvoidCrash.h"; sourceTree = "<group>"; };
+		D24458E01E76B3FC00F8FA41 /* NSMutableArray+AvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+AvoidCrash.m"; sourceTree = "<group>"; };
+		D24458E21E76B7D000F8FA41 /* NSMutableDictionary+AvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+AvoidCrash.h"; sourceTree = "<group>"; };
+		D24458E31E76B7D000F8FA41 /* NSMutableDictionary+AvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+AvoidCrash.m"; sourceTree = "<group>"; };
 		D2FEF44E1E6E892900584AF9 /* SNAvoidCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNAvoidCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FEF4521E6E892900584AF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2FEF4541E6E892900584AF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,8 +124,12 @@
 				D2FEF47A1E6EC64B00584AF9 /* AvoidRefreshViewNotMainThreadCrash.m */,
 				D2FEF47C1E6ECD7900584AF9 /* NSArray+AvoidCrash.h */,
 				D2FEF47D1E6ECD7900584AF9 /* NSArray+AvoidCrash.m */,
+				D24458DF1E76B3FC00F8FA41 /* NSMutableArray+AvoidCrash.h */,
+				D24458E01E76B3FC00F8FA41 /* NSMutableArray+AvoidCrash.m */,
 				D24458A41E7674A600F8FA41 /* NSDictionary+AvoidCrash.h */,
 				D24458A51E7674A600F8FA41 /* NSDictionary+AvoidCrash.m */,
+				D24458E21E76B7D000F8FA41 /* NSMutableDictionary+AvoidCrash.h */,
+				D24458E31E76B7D000F8FA41 /* NSMutableDictionary+AvoidCrash.m */,
 			);
 			name = SNAvoidCrash;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24458E11E76B3FC00F8FA41 /* NSMutableArray+AvoidCrash.m in Sources */,
 				D2FEF4591E6E892900584AF9 /* ViewController.m in Sources */,
 				D2FEF4751E6EC0D400584AF9 /* CrashTest.m in Sources */,
 				D24458A61E7674A600F8FA41 /* NSDictionary+AvoidCrash.m in Sources */,
@@ -205,6 +216,7 @@
 				D2FEF47E1E6ECD7A00584AF9 /* NSArray+AvoidCrash.m in Sources */,
 				D2FEF46B1E6E8CC800584AF9 /* NSObject+AvoidKVOCrash.m in Sources */,
 				D24458A31E765E3A00F8FA41 /* SNVoidCrashManager.m in Sources */,
+				D24458E41E76B7D000F8FA41 /* NSMutableDictionary+AvoidCrash.m in Sources */,
 				D2FEF4531E6E892900584AF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
