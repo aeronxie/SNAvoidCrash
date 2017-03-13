@@ -53,7 +53,7 @@ static const void *mapKey = &mapKey;
 	SEL originalSelector = @selector(addObserver:forKeyPath:options:context:);
 	SEL swizzleSelector = @selector(sn_addObserver:forKeyPath:options:context:);
 	
-	SNSWIZZLE(originalSelector, swizzleSelector);
+	SNSWIZZLEWITHCLASS(nil, originalSelector, swizzleSelector);
 }
 
 - (void)sn_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context {
@@ -89,7 +89,7 @@ static const void *mapKey = &mapKey;
 + (void)removeObserver {
 	SEL originalSelector = @selector(removeObserver:forKeyPath:);
 	SEL swizzleSelector = @selector(sn_removeObserver:forKeyPath:);
-	SNSWIZZLE(originalSelector, swizzleSelector);
+	SNSWIZZLEWITHCLASS(nil, originalSelector, swizzleSelector);
 }
 
 

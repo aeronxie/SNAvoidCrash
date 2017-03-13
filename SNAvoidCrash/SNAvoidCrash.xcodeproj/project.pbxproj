@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D24458A31E765E3A00F8FA41 /* SNVoidCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D24458A21E765E3A00F8FA41 /* SNVoidCrashManager.m */; };
+		D24458A61E7674A600F8FA41 /* NSDictionary+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D24458A51E7674A600F8FA41 /* NSDictionary+AvoidCrash.m */; };
 		D2FEF4531E6E892900584AF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4521E6E892900584AF9 /* main.m */; };
 		D2FEF4561E6E892900584AF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4551E6E892900584AF9 /* AppDelegate.m */; };
 		D2FEF4591E6E892900584AF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4581E6E892900584AF9 /* ViewController.m */; };
@@ -16,12 +18,15 @@
 		D2FEF46B1E6E8CC800584AF9 /* NSObject+AvoidKVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF46A1E6E8CC800584AF9 /* NSObject+AvoidKVOCrash.m */; };
 		D2FEF4721E6EBB2300584AF9 /* NSObject+AvoidSelectorNotFoundCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4711E6EBB2300584AF9 /* NSObject+AvoidSelectorNotFoundCrash.m */; };
 		D2FEF4751E6EC0D400584AF9 /* CrashTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4741E6EC0D400584AF9 /* CrashTest.m */; };
-		D2FEF4781E6EC4B000584AF9 /* NSObject+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF4771E6EC4B000584AF9 /* NSObject+Custom.m */; };
 		D2FEF47B1E6EC64C00584AF9 /* AvoidRefreshViewNotMainThreadCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF47A1E6EC64B00584AF9 /* AvoidRefreshViewNotMainThreadCrash.m */; };
 		D2FEF47E1E6ECD7A00584AF9 /* NSArray+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF47D1E6ECD7900584AF9 /* NSArray+AvoidCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D24458A11E765E3A00F8FA41 /* SNVoidCrashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNVoidCrashManager.h; sourceTree = "<group>"; };
+		D24458A21E765E3A00F8FA41 /* SNVoidCrashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNVoidCrashManager.m; sourceTree = "<group>"; };
+		D24458A41E7674A600F8FA41 /* NSDictionary+AvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AvoidCrash.h"; sourceTree = "<group>"; };
+		D24458A51E7674A600F8FA41 /* NSDictionary+AvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AvoidCrash.m"; sourceTree = "<group>"; };
 		D2FEF44E1E6E892900584AF9 /* SNAvoidCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNAvoidCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FEF4521E6E892900584AF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2FEF4541E6E892900584AF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,8 +44,6 @@
 		D2FEF4711E6EBB2300584AF9 /* NSObject+AvoidSelectorNotFoundCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AvoidSelectorNotFoundCrash.m"; sourceTree = "<group>"; };
 		D2FEF4731E6EC0D400584AF9 /* CrashTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTest.h; sourceTree = "<group>"; };
 		D2FEF4741E6EC0D400584AF9 /* CrashTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTest.m; sourceTree = "<group>"; };
-		D2FEF4761E6EC4B000584AF9 /* NSObject+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Custom.h"; sourceTree = "<group>"; };
-		D2FEF4771E6EC4B000584AF9 /* NSObject+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Custom.m"; sourceTree = "<group>"; };
 		D2FEF4791E6EC64B00584AF9 /* AvoidRefreshViewNotMainThreadCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvoidRefreshViewNotMainThreadCrash.h; sourceTree = "<group>"; };
 		D2FEF47A1E6EC64B00584AF9 /* AvoidRefreshViewNotMainThreadCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvoidRefreshViewNotMainThreadCrash.m; sourceTree = "<group>"; };
 		D2FEF47C1E6ECD7900584AF9 /* NSArray+AvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AvoidCrash.h"; sourceTree = "<group>"; };
@@ -84,8 +87,6 @@
 				D2FEF4581E6E892900584AF9 /* ViewController.m */,
 				D2FEF4731E6EC0D400584AF9 /* CrashTest.h */,
 				D2FEF4741E6EC0D400584AF9 /* CrashTest.m */,
-				D2FEF4761E6EC4B000584AF9 /* NSObject+Custom.h */,
-				D2FEF4771E6EC4B000584AF9 /* NSObject+Custom.m */,
 				D2FEF45A1E6E892900584AF9 /* Main.storyboard */,
 				D2FEF45D1E6E892900584AF9 /* Assets.xcassets */,
 				D2FEF45F1E6E892900584AF9 /* LaunchScreen.storyboard */,
@@ -107,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				D2FEF46C1E6E980600584AF9 /* SNAvoidCrashConfig.h */,
+				D24458A11E765E3A00F8FA41 /* SNVoidCrashManager.h */,
+				D24458A21E765E3A00F8FA41 /* SNVoidCrashManager.m */,
 				D2FEF4691E6E8CC800584AF9 /* NSObject+AvoidKVOCrash.h */,
 				D2FEF46A1E6E8CC800584AF9 /* NSObject+AvoidKVOCrash.m */,
 				D2FEF4701E6EBB2300584AF9 /* NSObject+AvoidSelectorNotFoundCrash.h */,
@@ -115,6 +118,8 @@
 				D2FEF47A1E6EC64B00584AF9 /* AvoidRefreshViewNotMainThreadCrash.m */,
 				D2FEF47C1E6ECD7900584AF9 /* NSArray+AvoidCrash.h */,
 				D2FEF47D1E6ECD7900584AF9 /* NSArray+AvoidCrash.m */,
+				D24458A41E7674A600F8FA41 /* NSDictionary+AvoidCrash.h */,
+				D24458A51E7674A600F8FA41 /* NSDictionary+AvoidCrash.m */,
 			);
 			name = SNAvoidCrash;
 			sourceTree = "<group>";
@@ -192,13 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2FEF4591E6E892900584AF9 /* ViewController.m in Sources */,
-				D2FEF4781E6EC4B000584AF9 /* NSObject+Custom.m in Sources */,
 				D2FEF4751E6EC0D400584AF9 /* CrashTest.m in Sources */,
+				D24458A61E7674A600F8FA41 /* NSDictionary+AvoidCrash.m in Sources */,
 				D2FEF47B1E6EC64C00584AF9 /* AvoidRefreshViewNotMainThreadCrash.m in Sources */,
 				D2FEF4721E6EBB2300584AF9 /* NSObject+AvoidSelectorNotFoundCrash.m in Sources */,
 				D2FEF4561E6E892900584AF9 /* AppDelegate.m in Sources */,
 				D2FEF47E1E6ECD7A00584AF9 /* NSArray+AvoidCrash.m in Sources */,
 				D2FEF46B1E6E8CC800584AF9 /* NSObject+AvoidKVOCrash.m in Sources */,
+				D24458A31E765E3A00F8FA41 /* SNVoidCrashManager.m in Sources */,
 				D2FEF4531E6E892900584AF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +362,7 @@
 				D2FEF4671E6E892900584AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

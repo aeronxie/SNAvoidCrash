@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <Foundation/Foundation.h>
 #import "CrashTest.h"
+#import "SNVoidCrashManager.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,10 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	[[CrashTest new] crashTest];
+	
+	NSArray *arr = @[@"1",@"2"];
+	[arr objectAtIndex:2];
+	
 }
 
 

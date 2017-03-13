@@ -59,14 +59,14 @@ void doNothingSelector() {}
 	SEL originalSelector = @selector(methodSignatureForSelector:);
 	SEL swizzleSelector = @selector(sn_methodSignatureForSelector:);
 	
-	SNSWIZZLE(originalSelector,swizzleSelector);
+	SNSWIZZLEWITHCLASS(nil, originalSelector, swizzleSelector);
 }
 
 + (void)exchangeForwardInvocation {
 	SEL originalSelector = @selector(forwardInvocation:);
 	SEL swizzleSelector = @selector(sn_forwardInvocation:);
 	
-	SNSWIZZLE(originalSelector,swizzleSelector);
+	SNSWIZZLEWITHCLASS(nil, originalSelector, swizzleSelector);
 }
 
 - (NSMethodSignature *)sn_methodSignatureForSelector:(SEL)sel{
