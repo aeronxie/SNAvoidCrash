@@ -8,7 +8,7 @@
 
 
 #define AvoidCrashSeparator         @"😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂"
-#define AvoidCrashSeparatorWithFlag @"😂😂😂😂😂😂😂😂😂😂😂😂AvoidCrash Log😂😂😂😂😂😂😂😂😂😂😂😂"
+#define AvoidCrashSeparatorWithFlag @"😂😂😂😂😂😂😂😂😂😂😂SNAvoidCrash Log😂😂😂😂😂😂😂😂😂😂😂"
 
 #define key_errorName			@"errorName"
 #define key_errorReason			@"errorReason"

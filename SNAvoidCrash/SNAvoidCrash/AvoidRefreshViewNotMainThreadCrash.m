@@ -8,6 +8,7 @@
 
 #import "AvoidRefreshViewNotMainThreadCrash.h"
 #import <objc/runtime.h>
+#import "SNVoidCrashManager.h"
 
 @implementation AvoidRefreshViewNotMainThreadCrash
 
@@ -17,7 +18,8 @@
 		
 		[self sn_setNeedsLayout];
 	} else {
-		NSLog(@"%s ******* try to update UI not on main thread %@ ",__FUNCTION__, self);
+		NSException *exception = [[NSException alloc]initWithName:@"SetNeedsLayout" reason:[NSString stringWithFormat:@"%s try to update UI not on main thread %@ ",__FUNCTION__, self] userInfo:nil];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"setNeedsLayout not main thread"];
 		dispatch_async(dispatch_get_main_queue(),^{
 			[self sn_setNeedsLayout];
 		});
@@ -33,7 +35,9 @@
 		
 	} else {
 		
-		NSLog(@"%s ******* try to update UI not on main thread %@ ",__FUNCTION__, self);
+		NSException *exception = [[NSException alloc]initWithName:@"SetNeedsDisplay" reason:[NSString stringWithFormat:@"%s try to update UI not on main thread %@ ",__FUNCTION__, self] userInfo:nil];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"SetNeedsDisplay not main thread"];
+	
 		dispatch_async(dispatch_get_main_queue(),^{
 			[self sn_setNeedsDisplay];
 		});
@@ -48,7 +52,9 @@
 		[self sn_setNeedsDisplayInRect:rect];
 		
 	} else {
-		NSLog(@"%s ******* try to update UI not on main thread %@ ",__FUNCTION__, self);
+		
+		NSException *exception = [[NSException alloc]initWithName:@"SetNeedsDisplayInRect" reason:[NSString stringWithFormat:@"%s try to update UI not on main thread %@ ",__FUNCTION__, self] userInfo:nil];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"SetNeedsDisplayInRect not main thread"];
 		dispatch_async(dispatch_get_main_queue(),^{
 			[self sn_setNeedsDisplayInRect:rect];
 		});
@@ -62,7 +68,9 @@
 		[self sn_setNeedsUpdateConstraints];
 		
 	} else {
-		NSLog(@"%s ******* try to update UI not on main thread %@ ",__FUNCTION__, self);
+		
+		NSException *exception = [[NSException alloc]initWithName:@"SetNeedsUpdateConstraints" reason:[NSString stringWithFormat:@"%s try to update UI not on main thread %@ ",__FUNCTION__, self] userInfo:nil];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"SetNeedsUpdateConstraints not main thread"];
 		dispatch_async(dispatch_get_main_queue(),^{
 			[self sn_setNeedsUpdateConstraints];
 		});

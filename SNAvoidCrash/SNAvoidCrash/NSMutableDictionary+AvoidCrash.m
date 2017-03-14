@@ -41,7 +41,7 @@
 		[self sn_setObject:anObject forKey:aKey];
 	}
 	@catch (NSException *exception) {
-		[SNVoidCrashManager errorWithException:exception errorSituation:@"set nil value"];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"set nil value for dictionary"];
 	}
 	@finally {
 	}
@@ -53,7 +53,7 @@
 		[self sn_removeObjectForKey:aKey];
 	}
 	@catch (NSException *exception) {
-		[SNVoidCrashManager errorWithException:exception errorSituation:@"void crash"];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"void crash for removeObjectForKey"];
 	}
 	@finally {
 	}

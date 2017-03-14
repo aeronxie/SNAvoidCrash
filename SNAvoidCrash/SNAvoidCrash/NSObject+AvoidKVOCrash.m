@@ -9,6 +9,7 @@
 #import "NSObject+AvoidKVOCrash.h"
 #import <objc/runtime.h>
 #import "SNAvoidCrashConfig.h"
+#import "SNVoidCrashManager.h"
 
 static const void *mapKey = &mapKey;
 
@@ -73,7 +74,8 @@ static const void *mapKey = &mapKey;
 	}
 	
 	if ([hashTable containsObject:keyPath]) {
-		NSLog(@"%s ******* don't add the same observer and keypath %@ ",__FUNCTION__, self);
+		NSException *exception = [[NSException alloc] initWithName:@"AddObserver" reason:[NSString stringWithFormat:@"%s don't add the same observer and keypath %@ ",__FUNCTION__, self] userInfo:nil];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"duplicate addObserver"];
 		return;
 	}
 	
@@ -104,7 +106,8 @@ static const void *mapKey = &mapKey;
 		return;
 	}
 	if (![hashTable containsObject:keyPath]) {
-		NSLog(@"%s ******* don't remove the keypath not existed %@ ",__FUNCTION__, self);
+		NSException *exception = [[NSException alloc] initWithName:@"RemoveObserver" reason:[NSString stringWithFormat:@"%s don't remove the keypath not existed %@ ",__FUNCTION__, self] userInfo:nil];
+		[SNVoidCrashManager errorWithException:exception errorSituation:@"duplicate remove observer"];
 		return;
 	}
 	[hashTable removeObject:keyPath];
